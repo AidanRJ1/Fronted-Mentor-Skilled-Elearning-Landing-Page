@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/AidanRJ1/Fronted-Mentor-Skilled-Elearning-Landing-Page
+- Live Site URL: https://aidanrj1.github.io/Fronted-Mentor-Skilled-Elearning-Landing-Page
 
 ## My process
 
