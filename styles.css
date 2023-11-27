@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/Inter-VariableFont_slnt,wght.tff') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: rgb(240,241,255);
+  background: linear-gradient(0deg, rgba(240,241,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+/* ===== Global Styles ====== */
+.pageContainer {
+  max-width: 1470px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mobile {
+  display: block;
+}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+/* ----- Global Colours ----- */
+:root {
+  --dark-blue: #666CA3;
+  --black: #13183F;
+  --grey-green: #83869A;
+  --red: #F74780;
+  --pink: #FFA7C3;
+}
+
+.gradient1 {
+  background: rgb(240,42,166);
+  background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+}
+
+.gradient1:hover {
+  background: linear-gradient(0deg, rgba(240,42,166,0.5) 0%, rgba(255,111,72,0.5) 100%);
+}
+
+.gradient2 {
+  background: rgb(240,42,166);
+  background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(72,81,255,1) 100%);
+}
+
+.gradient2:hover {
+  background: linear-gradient(0deg, rgba(240,42,166,0.5) 0%, rgba(72,81,255,0.5) 100%);
+}
+
+/* ----- Font Global Styles ----- */
+.headingXL {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 70px;
+  color: var(--black);
+}
+
+.headingL {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 51px;
+  color: var(--black);
+}
+
+.headingM {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 40px;
+  color: var(--black);
+}
+
+.headingS {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.bodyM {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  color: var(--grey-green);
+}
+
+.bodyS {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  color: var(--grey-green);
+}
+
+/* ----- Button Global Styles ------ */
+.button, .button1 {
+  height: 56px;
+  width: 167px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.buttonBg {
+  background-color: #fff;
+  border-radius: 50px;
+  width: 167px;
+}
+
+.button1 {
+  background-color: var(--black);
+}
+
+.button1:hover {
+  background-color: var(--dark-blue);
+}
+
+/* ===== Header Section ===== */
+.header {
+  width: 100%;
+  padding: 16px 16px 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--black);
+}
+
+/* ====== Hero Section ===== */
+.hero {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .container {
+  padding: 0 16px;
+}
+
+.hero .heading {
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.hero .content {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  color: var(--grey-green);
+  margin-bottom: 24px;
+}
+
+.hero button {
+  margin-bottom: 26px;
+  align-self: flex-start;
+}
+
+.hero img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+
+/* ===== Courses Section ===== */
+.courses {
+  width: 100%;
+  padding: 0 16px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.courses .heading {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #fff;
+  text-align: left;
+  padding: 24px 29px 32px 28px;
+  border-radius: 10px;
+}
+
+.courseContainer {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  padding: 56px 28px 32px;
+}
+
+.courses .icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 100%;
+  position: absolute;
+  top: -24px;
+  left: 28px;
+}
+
+.courses .title {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.courseContainer .content {
+  line-height: 26px;
+  color: var(--grey-green);
+  margin-bottom: 24px;
+}
+
+.courseContainer .link {
+  color: var(--red);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.courseContainer .link:active, .courseContainer .link:hover {
+  color: var(--pink);
+}
+
+/* ===== Footer Section ====== */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 16px;
+  background-color: var(--black);
+}
+
+.footer .logo {
+  color: #fff;
+}
+
+/* ===== Tablet Media Query ===== */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  /* ----- Tablet Header Section ----- */
+  .header {
+    padding: 24px 40px 99px;
+  }
+
+  /* ----- Tablet Hero Section ----- */
+  .hero {
+    flex-direction: row;
+    align-items: revert;
+  }
+
+  .hero .container {
+    padding: 0px 331px 186px 40px;
+  }
+
+  .hero .heading {
+    margin-bottom: 25px;
+  }
+
+  .hero button {
+    margin-bottom: 0px;
+  }
+
+  .hero img {
+    position: absolute;
+    height: 640px;
+    width: 640px;
+    margin-bottom: 0px;
+    top: -232px;
+    right: -277px;
+  }
+
+  /* ----- Tablet Courses Section ----- */
+  .courses {
+    padding: 0 40px 86px;
+    display: grid;
+    flex-direction: revert;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px 10px;
+  }
+
+  .courses .heading {
+    padding: 56px 21px 139px 32px;
+  }
+
+  .courseContainer {
+    padding: 56px 22px 32px 32px;
+  }
+
+  .courses .icon {
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+    position: absolute;
+    top: -24px;
+    left: 28px;
+  }
+
+  /* ----- Tablet Footer Section ----- */
+  .footer {
+    padding: 36px 40px;
+  }
+}
+
+/* ===== 1440px Desktop Media Query ===== */
+@media only screen and (min-width: 1440px) {
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  /* ----- 1440px Desktop Header Section ----- */
+  .header {
+    padding: 38px 165px 185px;
+  }
+
+  /* ----- 1440px Desktop Hero Section ----- */
+  .hero .container {
+    padding: 0px 818px 226px 165px;
+  }
+
+  .hero .heading {
+    margin-bottom: 29px;
+  }
+
+  .hero .content {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .hero button {
+    margin-bottom: 0px;
+  }
+
+  .hero img {
+    position: absolute;
+    height: 936px;
+    width: 991px;
+    margin-bottom: 0px;
+    top: -420px;
+    right: -335px;
+  }
+
+  /* ----- 1440px Desktop Courses Section ----- */
+  .courses {
+    padding: 0 165px 140px;
+    display: grid;
+    flex-direction: revert;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 30px;
+  }
+
+  .courses .heading {
+    padding: 64px 32px 138px 32px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .courseContainer {
+    padding: 64px 32px 40px;
+  }
+
+  .courseContainer .title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .courseContainer .content {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /* ----- 1440px Desktop Footer Section ----- */
+  .footer {
+    padding: 32px 165px;
+  }
+}
+
+/* ====== > 1470px Desktop Footer Section ===== */
+@media only screen and (min-width: 1470px) {
+  .pageContainer {
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+  }
+}
